@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script src="js/validation.js"></script>
+    <title>iCases</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
+
+<body>
+    <headder>
+        <div class="headder">
+            <div id="top-bar" class="headder">
+                <div class="top-bar" id="promotionaltext">
+                    3 FOR 2 ON ALL PRODUCTS &nbsp;|&nbsp; 14-DAY RETURNS & LIFETIME WARRANTY &nbsp;|&nbsp; FREE UK
+                    SHIPPING OVER £50
+                </div>
+                <!-- <div class="top-bar" id="userchoices">
+                    <div class="choice" id="choice1">Our Stockist</div>
+                    <div class="choice" id="choice1">Our Stockist</div>
+                    <div class="choice" id="choice2">Track Order</div>
+                </div> -->
+            </div>
+
+            <div id="middle-bar" class="headder">
+                <img src="images/logo_iCases.png" alt="icase logo" srcset="">
+                <div id="form">
+                    <input type="search" id="searchbar" placeholder="Search entire store here...">
+                    <button type="submit" id="searchbutton" title="Search" class="action search" aria-label="Search"
+                        disabled=""></button>
+                </div>
+                <ul>
+                    <div class="icons">
+                        <li id="icon1"><a href="">Login/Register</a></li>
+                    </div>
+                    <div class="icons">
+                        <li id="icon2"><a href="">Quick Order</a></li>
+                    </div>
+                    <div class="icons">
+                        <li id="icon3"><a href="">My Quote</a></li>
+                    </div>
+                    <div class="icons">
+                        <li id="icon4"><a href="">My Cart</a></li>
+                    </div>
+                </ul>
+
+
+            </div>
+
+
+            <div class="headder" id="bottombar">
+                <div class="navitems">IPAD CASES</div>
+                <div class="navitems">IPHONE CASES</div>
+                <div class="navitems">MACBOOK SLEEVES</div>
+                <div class="navitems">SCREEN PROTECTORS</div>
+                <div class="navitems">OUTLET</div>
+                <div class="navitems">PRODUCT REGISTRATION</div>
+                <div class="navitems" id="navlast">EDUCATION</div>
+            </div>
+        </div>
+    </headder>
+    <content>
+
+        <div class="form" id="contactform">
+            <div class="title">
+                <strong>Contact Us</strong>
+            </div>
+            <div class="form-container">
+                <form>
+                    <label name="userName">Name :<span id="star"><sup>*</sup></span></label><br>
+                    <input type="text" placeholder="Enter your name..." name="userName" id="username" required><br>
+                    <span class="warning" id="name-warning">enter valid name</span><br>
+
+                    <label name="userEmail">Email :<span id="star"><sup>*</sup></span></label><br>
+                    <input type="email" placeholder="Enter your Email..." name="userEmail" id="email"><br>
+                    <span class="warning" id="email-warning">enter valid email</span><br>
+
+                    <label name="userPhone">Phone :<span id="star"><sup>*</sup></span></label><br>
+                    <div id="pgdiv">
+                    <select name="code">
+                        <option value="1">+91</option>
+                    </select>
+                    <input type="text" placeholder="Enter your phone" name="userPhone" id="phone" pattern="">
+                    </div>
+                    <span class="warning" id="phone-warning">enter valid phone</span>
+                    <br>
+                    <label name="subject">Subject :<span id="star"><sup>*</sup></span></label></label><br>
+                    <select name="subject" class="subject" id="select">
+                        <option value="1">--- Please Select ---</option>
+                        <option value="2">xyz</option>
+                    </select>
+                    <br><span class="warning" id="select-warning">select valid option</span>
+                    <br>
+                    <label name="message">Message :<span id="star"><sup>*</sup></span></label><br>
+                    <textarea rows="5" cols="80" name="message" id="message" placeholder="Vivamus vestibulum ornare erat sit amet tincidunt. Nunc imperdiet est ornare, cursus nunc in, scelerisque odio. Nunc lacus orci, laoreet ut tempor sit amet, hendrerit at augue."></textarea><br><span class="warning" id="message-warning">enter valid message</span><br>
+                    <input type="button" id="button" value="Submit" onclick="validate()">
+                </form>
+            </div>
+        </div>
+
+         <div class="contact-info">
+        <div class="head">
+            Need Help
+            <hr>
+        </div>
+        <div class="contact1">
+            <div class="icon1">
+            </div>
+            <span>
+                Call Us : +44(0)9998888888 <br>
+                We're here from monday to friday    
+            </span>
+        </div>
+        <div class="contact1">
+            <div class="icon2">
+            </div>
+            <span>
+                Email Us : support@icases.com <br>
+                We aim to repond within 24hr , Mon-Fri    
+            </span>
+            
+        </div>
+    </div>
+
+        
+    </content>
+
+    <footer>
+    <div id="ftop">
+        <div id="footup">
+            <img src="images/logo_iCase_white.svg" alt="icase logo" srcset="" id>
+        </div>
+        <ul id="footup1">
+            <li>INFO</li>
+            <li>MyAccount</li>
+            <li>FAQ</li>
+            <li>About Us</li>
+        </ul>
+        <ul id="footup1">
+            <li>customer services</li>
+            <li>Contact us</li>
+            <li>Return Policy</li>
+            <li>Product Registration</li>
+        </ul>
+        <ul id="footup1">
+            <li>terms & conditions</li>
+            <li>terms & conditions</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+        </ul>
+        <ul id="footup1">
+            <li>company info</li>
+            <li class="contact">
+                <a href="#" class="call">Call Us: +44 (0) 999 8888888 </a><br>
+                <a href="#" class="time" id="lasta">We here Mon-Fri 9am - 5pm. </a>
+            </li>
+            <li class="email">
+                <a href="#" class="call">Email us: support@icases.com </a><br>
+                <a href="#" class="time" id="lasta">We aim to respond within 24hrs, Mon-Fri </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="fmid">
+        <div id="fmid-cont">
+            <h6>FOLLOW US ON</h6>
+            <img src="images/ic_facebook.svg" alt="ic_facebook" srcset="">
+            <img src="images/ic_twitter.svg" alt="images/ic_twitter" srcset="">
+            <img src="images/ic_pintrest.svg" alt="ic_pintrest" srcset="">
+            <img src="images/ic_instagram.svg" alt="ic_instagram" srcset="">
+            <img src="images/ic_youtube.svg" alt="ic_youtube" srcset="">
+        </div>
+        <div id="fmid-cont">
+            <h6>PAYMENT METHOD</h6>
+            <img src="images/payment_logos.svg" alt="payment_logos" srcset="">
+        </div>
+    </div>
+    <div class="copyright">
+        <span>© 2021 iCases Limited.</span>
+    </div>
+</footer>
+</body>
+
+</html>

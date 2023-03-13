@@ -80,11 +80,11 @@
             <div class="form-container">
                 <form>
                     <label name="userName">Name :<span id="star"><sup>*</sup></span></label><br>
-                    <input type="text" placeholder="Enter your name..." name="userName" id="username" required><br>
+                    <input type="text" placeholder="Enter your name..." name="userName" id="username" required onkeyup="validName()"><br>
                     <span class="warning" id="name-warning">enter valid name</span><br>
 
                     <label name="userEmail">Email :<span id="star"><sup>*</sup></span></label><br>
-                    <input type="email" placeholder="Enter your Email..." name="userEmail" id="email"><br>
+                    <input type="email" placeholder="Enter your Email..." name="userEmail" id="email" onkeyup="validEmail()"><br>
                     <span class="warning" id="email-warning">enter valid email</span><br>
 
                     <label name="userPhone">Phone :<span id="star"><sup>*</sup></span></label><br>
@@ -92,19 +92,19 @@
                     <select name="code">
                         <option value="1">+91</option>
                     </select>
-                    <input type="text" placeholder="Enter your phone" name="userPhone" id="phone" pattern="">
+                    <input type="text" placeholder="Enter your phone" name="userPhone" id="phone" pattern="" onkeyup="validphone()">
                     </div>
                     <span class="warning" id="phone-warning">enter valid phone</span>
                     <br>
                     <label name="subject">Subject :<span id="star"><sup>*</sup></span></label></label><br>
-                    <select name="subject" class="subject" id="select">
+                    <select name="subject" class="subject" id="select" onchange="subjectValidate()">
                         <option value="1">--- Please Select ---</option>
                         <option value="2">xyz</option>
                     </select>
                     <br><span class="warning" id="select-warning">select valid option</span>
                     <br>
                     <label name="message">Message :<span id="star"><sup>*</sup></span></label><br>
-                    <textarea rows="5" cols="80" name="message" id="message" placeholder="Vivamus vestibulum ornare erat sit amet tincidunt. Nunc imperdiet est ornare, cursus nunc in, scelerisque odio. Nunc lacus orci, laoreet ut tempor sit amet, hendrerit at augue."></textarea><br><span class="warning" id="message-warning">enter valid message</span><br>
+                    <textarea rows="5" cols="80" name="message" id="message" onkeyup="messageValidate()" placeholder="Vivamus vestibulum ornare erat sit amet tincidunt. Nunc imperdiet est ornare, cursus nunc in, scelerisque odio. Nunc lacus orci, laoreet ut tempor sit amet, hendrerit at augue."></textarea><br><span class="warning" id="message-warning">enter valid message</span><br>
                     <input type="button" id="button" value="Submit" onclick="validate()">
                 </form>
             </div>

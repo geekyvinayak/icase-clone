@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>iCases</title>
-
+    <script src="js/validation.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 
@@ -25,21 +25,118 @@
                     3 FOR 2 ON ALL PRODUCTS &nbsp;|&nbsp; 14-DAY RETURNS & LIFETIME WARRANTY &nbsp;|&nbsp; FREE UK
                     SHIPPING OVER £50
                 </div>
-                <!-- <div class="top-bar" id="userchoices">
-                    <div class="choice" id="choice1">Our Stockist</div>
-                    <div class="choice" id="choice1">Our Stockist</div>
-                    <div class="choice" id="choice2">Track Order</div>
-                </div> -->
             </div>
 
             <div id="middle-bar" class="headder">
-                <div id="hamburger"><img src="images/Union 1.svg" alt="hamburger" srcset=""></div>
+                <div id="hamburger" onclick="openNav()" ><img src="images/Union 1.svg" alt="hamburger" srcset="" id="hmimg">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div id="ham-items">
+                        <a href="#">iPad Cases</a>
+                        <a href="#">iPhone Cases</a>
+                        <a href="#">Mackbook Sleeves</a>
+                        <a href="#">Screen Protectors</a>
+                        <a href="#">Outlet</a>
+                        <a href="#">Product Registration</a>
+                    </div>
+                      </div>
+            </div>
                 
-                <img src="images/logo_iCases.png" alt="icase logo" srcset="">
+
+                <img src="images/logo_iCases.png" alt="icase logo" srcset="" onclick="openNav()">
                 <div id="form">
-                    <input type="search" id="searchbar" placeholder="Search entire store here...">
+                    <input type="search" id="searchbar" placeholder="Search entire store here..." onfocus="searchfocus()" onblur="focusout()"
+                    >
                     <button type="submit" id="searchbutton" title="Search" class="action search" aria-label="Search"
                         disabled=""></button>
+                        <div class="onsearch" id="onsearch">
+                            <div class="searchmenu-block">
+                                <div class="product-block">
+                                    <p class="searchmenu-heading">PRODUCTS (8)</p>
+                                    <div class="vertical-scroll">
+                                        <div class="product">
+                                            <div class="prod-img">
+                                                <img src="images/search_image_01.png" alt="search-image">
+                                            </div>
+                                            <div class="prod-desc">
+                                                <p class="prod-content">iPhone 12 / iPhone 12 Pro (6.1-inch) 2020 - <strong>
+                                                        Origami</strong> Snap Case - Dusty Pink</p>
+                                                <p class="price">£49.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="product">
+                                            <div class="prod-img">
+                                                <img src="images/search_image_01.png" alt="search-image">
+                                            </div>
+                                            <div class="prod-desc">
+                                                <p class="prod-content">iPhone 12 / iPhone 12 Pro (6.1-inch) 2020 - <strong>
+                                                        Origami</strong> Snap Case - Dusty Pink</p>
+                                                <p class="price">£49.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="product">
+                                            <div class="prod-img">
+                                                <img src="images/search_image_01.png" alt="search-image">
+                                            </div>
+                                            <div class="prod-desc">
+                                                <p class="prod-content">iPhone 12 / iPhone 12 Pro (6.1-inch) 2020 - <strong>
+                                                        Origami</strong> Snap Case - Dusty Pink</p>
+                                                <p class="price">£49.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="product">
+                                            <div class="prod-img">
+                                                <img src="images/search_image_01.png" alt="search-image">
+                                            </div>
+                                            <div class="prod-desc">
+                                                <p class="prod-content">iPhone 12 / iPhone 12 Pro (6.1-inch) 2020 - <strong>
+                                                        Origami</strong> Snap Case - Dusty Pink</p>
+                                                <p class="price">£49.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="product">
+                                            <div class="prod-img">
+                                                <img src="images/search_image_01.png" alt="search-image">
+                                            </div>
+                                            <div class="prod-desc">
+                                                <p class="prod-content">iPhone 12 / iPhone 12 Pro (6.1-inch) 2020 - <strong>
+                                                        Origami</strong> Snap Case - Dusty Pink</p>
+                                                <p class="price">£49.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prod-categories">
+                                    <p class="searchmenu-heading">PRODUCTS IN CATEGORIES</p>
+                                    <div class="prod-cat-list">
+                                        <ul>
+                                            <li><a href="#"><strong>Origami</strong> Snap Case</a></li>
+                                            <li><a href="#"><strong>Origami</strong> Snap Case</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+        
+                                <div class="prod-categories">
+                                    <p class="searchmenu-heading">POPULAR SUGGESTIONS</p>
+                                    <div class="prod-cat-list">
+                                        <ul>
+                                            <li><a href="#">iPhone 12 Mini (5.4-inch) 2020 - <strong>Origami</strong> Folio Case
+                                                    - Dusty Pink</a></li>
+                                            <li><a href="#">iPhone 12 Mini (5.4-inch) 2020 - <strong>Origami</strong> Folio Case
+                                                    - Black</a></li>
+                                            <li><a href="#">iPhone 12 / iPhone 12 Pro (6.1-inch) 2020 - <strong>Origami</strong>
+                                                    Snap Case - Black</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+        
+                                <div>
+                                    <button class="prod-btn">
+                                        SHOW ALL 8 RESULTS >
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                 </div>
                 <ul id="iconlist">
                     <div class="icons">
@@ -52,7 +149,38 @@
                         <li id="icon3"><a href="">My Quote</a></li>
                     </div>
                     <div class="icons">
-                        <li id="icon4"><a href="">My Cart</a></li>
+                        <li id="icon4" onclick="showcart()"><a href="javascript:void(0);">My Cart</a></li>
+                        <div id="cartitem">
+                            <div class="carttext">
+                                <span class="cart-title">2 Items in Cart</span>
+                                <span class="carttotal">Cart Subtotal:<br><span>$900.00</span></span>
+                            </div>
+                            <div class="chkoutbtn">
+                                <button>PROCEED TO CHECKOUT</button>
+                            </div>
+                            <div class="product">
+                                <div>
+                                    <img src="images/mini_cart_image_01.png" alt="mini_cart_image_01">
+                                </div>
+                                <div class="prd-txt">
+                                    <p>16 Inch Organiser MacBook Sleeve - Dusty Pink</p>
+                                    <span>£49.00</span>
+                                </div>
+                            </div>
+
+                            <div class="product">
+                                <div>
+                                    <img src="images/mini_cart_image_02.png" alt="mini_cart_image_02">
+                                </div>
+                                <div class="prd-txt">
+                                    <p>iPhone X Case Magnetic Shell - Rose Gold</p>
+                                    <span>£49.00</span>
+                                </div>
+                            </div>
+                            <div class="view">
+                                <button>VIEW AND EDIT CART</button>
+                            </div>
+                        </div>
                     </div>
                 </ul>
 
@@ -70,7 +198,21 @@
 
 
             <div class="headder" id="bottombar">
-                <div class="navitems">IPAD CASES</div>
+                <div class="navitems" id="ipad-cases">IPAD CASES
+                    <div class="megamenu">
+                        <div class="megamenu-con">
+                            <div class="megamenu-con1">
+                                iPad Air 4 (10.9”) <br> <br> iPad 10.2” (7th & 8th Gen) <br> <br> iPad 9.7” (5th & 6th Gen) <br> <br> iPad 2, 3 & 4 Cases <br><br> iPad Pro 9.7” <br><br> iPad Pro 11” <br><br> iPad Pro 11” (2018) 1st Gen. <br><br> iPad Pro 11” (2020) 2nd Gen. <br><br> iPad Pro 11 (2021) 3rd Gen. <br><br> iPad Pro 10.5”
+                            </div>
+                            <div class="megamenu-con2">
+                                iPad Pro 12.9” <br><br> iPad Pro 12.9” (1st & 2nd Gen) <br><br> iPad Pro 12.9” (3rd & 4th Gen) <br><br> iPad Mini 5 cases <br><br> iPad Mini 4 Cases <br><br> iPad Mini 1, 2 & 3 Cases <br><br> iPad Air 3 (10.5”) <br><br> iPad Air 2 Cases
+                            </div>
+                            <div class="megamenu-con3">
+                                <img src="images/megamenu_banner_img_with_content.png" alt="Megamenu-banner" width="580px" height="280px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="navitems">IPHONE CASES</div>
                 <div class="navitems">MACBOOK SLEEVES</div>
                 <div class="navitems">SCREEN PROTECTORS</div>
@@ -82,11 +224,13 @@
     </headder>
     <content>
         <div id="corosel">
-            <div class="your-class">
-                <div><img src="images/homepage_slider_banner01.jpg" alt="banner01" srcset=""></div>
-                <div><img src="images/homepage_slider_banner02.jpg" alt="banner02" srcset=""></div>
+                <div class="your-class">
+                    <div><img src="images/homepage_slider_banner01.jpg" alt="banner01" srcset=""></div>
+                    <div><img src="images/homepage_slider_banner02.jpg" alt="banner02" srcset=""></div>
+                </div>
             </div>
-        </div>
+
+      
 
         <div id="limited-offer">
             <h3>LIMITED TIME OFFERS</h3>
@@ -371,7 +515,7 @@
         </div>
 
         <div id="topproducts">
-            <h3>TOP SELLING PRODUCTS</h3>
+            <h3>WHAT WE HAVE IN STORE FOR YOU</h3>
             <div class="splide" id="slider-3">
                 <div class="splide__track">
                     <div class="splide__list">
@@ -412,13 +556,14 @@
             </div>
         </div>
 
-        <div id="featured">
+        <div id="featured2">
             <img src="images/SMASH_TEST_banner.png" alt="SMASH_TEST_banner" srcset="">
             <img src="images/Protective_Ipad_banner.png" alt="Protective_Ipad_banner" srcset="">
 
         </div>
 
         <div id="newsletter">
+
             <div id="newsright">
                 <div id="suscribe">
                     Subscribe for Newsletters
@@ -426,13 +571,16 @@
                 <div id="suscribetxt">
                     Subscribe for early access on offers and new arrivals
                 </div>
+
             </div>
             <div class="search">
                 <form>
-                    <input type="text" placeholder="Enter Email address..." name="search">
-                    <button type="submit" class="subscribebtn">SUBSCRIBE</button>
+                    <input type="text" placeholder="Enter Email address..." name="search" id="email"
+                        onkeyup="validEmail()">
+                    <button type="submit" class="subscribebtn" onclick="openNav()">SUBSCRIBE</button>
                 </form>
             </div>
+
         </div>
     </content>
 
@@ -475,11 +623,13 @@
         <div id="fmid">
             <div id="fmid-cont">
                 <h6>FOLLOW US ON</h6>
+                <div>
                 <img src="images/ic_facebook.svg" alt="ic_facebook" srcset="">
                 <img src="images/ic_twitter.svg" alt="ic_twitter" srcset="">
                 <img src="images/ic_pintrest.svg" alt="ic_pintrest" srcset="">
                 <img src="images/ic_instagram.svg" alt="ic_instagram" srcset="">
                 <img src="images/ic_youtube.svg" alt="ic_youtube" srcset="">
+            </div>
             </div>
             <div id="fmid-cont">
                 <h6>PAYMENT METHOD</h6>
@@ -514,17 +664,27 @@
                             slidesToShow: 1,
                             slidesToScroll: 1,
                             infinite: true,
-                            dots: true
+                            arrow: true
                         }
                     },]
             });
 
             $('.deal-container').slick({
                 slidesToShow: 3,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 2
+		      }
+		    }
+		  ]
             });
         });
 
+        // var splide = new Splide('#topp-banner');
+        // splide.mount();
 
         var splide = new Splide('.splide', {
             perPage: 5,
@@ -536,8 +696,9 @@
             loop: true,
             breakpoints: {
                 768: {
-                    perPage: 3,
-                    gap: '0.5rem',
+                    perPage: 2,
+                    gap: '2rem',
+                    padding: "3rem"
 
                 },
                 480: {
@@ -559,9 +720,10 @@
             gap: '1rem',
             loop: true,
             breakpoints: {
-                678: {
-                    perPage: 3,
-                    gap: '0.5rem',
+                768: {
+                    perPage: 2,
+                    gap: '2rem',
+                    padding: "3rem"
 
                 },
                 480: {
@@ -580,9 +742,10 @@
 
             gap: '1rem',
             breakpoints: {
-                669: {
-                    perPage: 3,
-                    gap: '1rem',
+                768: {
+                    perPage: 2,
+                    gap: '2rem',
+                    padding: "3rem"
 
                 },
                 480: {
